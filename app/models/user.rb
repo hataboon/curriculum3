@@ -7,6 +7,6 @@ class User < ActiveRecord::Base
 
   validates :email, presence: true, uniqueness: true
 
-  validates :last_name,presence: true, length: {maximum: 255}
-  validates :first_name,presence: true, length: {maximum: 255}
+  validates :last_name, presence: true, length: { maximum: 255 }
+  validates :first_name, presence: true, length: { maximum: 255 }
 end
