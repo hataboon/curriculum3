@@ -43,7 +43,7 @@
           <!-- link_toを使う形に修正してください -->
           <%= link_to 'プロフィール','#', class: 'dropdown-item' %>
           <!-- link_toを使う形に修正してください -->
-          <%= link_to 'ログアウト', '#', class: 'dropdown-item' %>
+          <%= link_to 'ログアウト', logout_path, class: 'dropdown-item', data: { turbo_method: :delete} %>
         </div>
       </li>
     </ul>
